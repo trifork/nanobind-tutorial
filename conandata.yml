@@ -3,3 +3,4 @@
 
 requirements:
   - "catch2/3.11.0"
+  - "nanobind/[>=2.9]"
