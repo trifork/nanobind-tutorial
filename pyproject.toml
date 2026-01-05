@@ -1,0 +1,19 @@
+[project]
+name = "paul"
+description = "The Perfect Awesome Ultimate LLM (P.A.U.L.)"
+version = "1.0" # Can also be detected dynamically
+authors = [ {name = "Paul M. B. Bendixen", email = "pbe@trifork.com"}]
+maintainers = [ {name = "Paul M. B. Bendixen", email = "pbe@trifork.com"}]
+
+[build-system]
+requires = [
+    "nanobind >= 2.9",
+    "scikit-build-core"
+]
+
+build-backend = "scikit_build_core.build"
+
+[tool.scikit-build]
+wheel.py-api = "cp312"
+build.targets = ["paul"]
+cmake.args = ["--preset release"]
