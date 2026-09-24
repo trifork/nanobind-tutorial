@@ -17,3 +17,7 @@ build-backend = "scikit_build_core.build"
 wheel.py-api = "cp312"
 build.targets = ["paul"]
 cmake.args = ["--preset release"]
+
+[[tool.scikit-build.overrides]]
+if.platform-system = "win32"
+cmake.args = ['--preset release -G "Visual Studio 18 2026"']

@@ -1,4 +1,5 @@
 add_library(PAUL)
+set_target_properties(PAUL PROPERTIES POSITION_INDEPENDENT_CODE TRUE)
 
 target_sources(PAUL
 	PRIVATE
